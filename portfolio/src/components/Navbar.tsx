@@ -12,7 +12,7 @@ function Navbar() {
     };
 
     return (
-        <div>
+        <div className='container'>
             <nav className={`navbar navbar-dark knavbar-expand-lg fixed-top`}>
                 <div className="container-fluid">
                     {/* Logo 

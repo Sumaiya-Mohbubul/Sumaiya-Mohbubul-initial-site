@@ -1,0 +1,46 @@
+ 
+  :root {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  body {
+    min-height: 90%;
+    background: #212534;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    box-sizing: border-box;
+  }
+  
+  
+  .card {
+    background: #23283e;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    position: relative;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-family: monospace;
+    opacity: .7;
+    color: rgb(255, 255, 255);
+    transition: color 1s;
+    color: #ffffff;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 150px #03e9f4;
+  }
+  
+  
+  
