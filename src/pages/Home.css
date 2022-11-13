@@ -1,0 +1,150 @@
+  #carousel-cards {
+    color: #ffffff;
+    background: #000000;
+    margin: 4%;
+    padding: 3%;
+    text-align: center;
+    opacity: .9;
+    box-shadow: 0 0 0px #1e2020,
+                0 0 0px #1e2020,
+                0 0 0px #1e2020,
+                0 0 0px #1e2020;
+  }
+
+  .carousel {
+    text-align: center;
+    align-content: center;
+    align-self: center;
+  }
+  
+  .card {
+    background: #23283e;
+    margin: auto;
+    margin-top: 3%;
+    position: relative;
+    border-radius: 10px;
+    align-content: center;
+    display: flex;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+    opacity: .7;
+    color: rgb(255, 255, 255);
+    transition: all 1s;
+    color: #ffffff;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 150px #03e9f4;
+  }
+
+  .p {
+    color: rgb(255, 255, 255);
+  }
+  
+  .card-horizontal {
+    background: #23283e;
+    margin: auto;
+    margin-top: 3%;
+    padding: 3%;
+    position: relative;
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+    opacity: .7;
+    color: rgb(255, 255, 255);
+    transition: all 1s;
+    color: #ffffff;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 150px #03e9f4;
+  }
+
+  .card-content {
+    position: relative;
+    align-self: center;
+    max-width: 90%;
+    max-height: fit-content;
+    padding-left: 3%;
+    padding-top: 2%;
+    color: #ffffff;
+  }
+
+  .card-body {
+    position: relative;
+    margin-top: 2%;
+    font-size: 0.9em;
+    line-height: 16pt;
+  }
+
+  .card-image {
+    position: relative;
+    flex: 0 0 50%;
+    
+  }
+
+  #profilePic {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    max-width: 15rem;
+    margin-bottom: auto;
+    margin-left: 2%;
+    padding: auto;
+  }
+  
+  @media (max-width: 700px) {
+      .card-horizontal {
+        background: #23283e;
+        margin: auto;
+        margin-top: 1%;
+        padding: 1%;
+        position: relative;
+        border-radius: 10px;
+        justify-content: center;
+        display: flex;
+        font-size: 1em;
+        color: rgb(255, 255, 255);
+        font-family: monospace;
+        opacity: .7;
+        color: rgb(255, 255, 255);
+        transition: all 1s;
+        color: #ffffff;
+        box-shadow: 0 0 5px #03e9f4,
+                    0 0 5px #03e9f4,
+                    0 0 20px #03e9f4,
+                    0 0 50px #03e9f4;
+      }
+    
+      .card-content {
+        position: relative;
+        max-width: 90%;
+        max-height: fit-content;
+      }
+    
+      .card-body {
+        position: relative;
+        margin-top: 1%;
+        font-size: 0.9em;
+        line-height: 12pt;
+        color: #FFFF;
+      }
+    
+      .card-image {
+        position: relative;
+        flex-wrap: 0, 0, 50%;
+      }
+      #profilePic {
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        max-width: 10rem;
+        margin-bottom: auto;
+      }
+    }
+    
+  
