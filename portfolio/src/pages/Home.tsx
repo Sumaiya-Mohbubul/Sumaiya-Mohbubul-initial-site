@@ -2,6 +2,7 @@ import ParticlesBackground from "../components/Particles";
 import './Home.css';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { Link } from "react-router-dom";
 
 function Home(this: any) {
 
@@ -55,18 +56,21 @@ function Home(this: any) {
                             <h6>Here are some projects I really enjoyed!</h6>
                         </div>
                         <Carousel className="carousel"
-                            swipeable={false}
-                            draggable={false}
-                            showDots={false}
+                            additionalTransfrom={0}
                             responsive={responsive}
-                            arrows={true}
-                            ssr={true} // means to render carousel on server-side.
-                            infinite={true}
-                            autoPlaySpeed={1000}
-                            keyBoardControl={true}
-                            customTransition="all .5"
-                            transitionDuration={500}
-                            itemClass="carousel-item-padding-40-px"
+                            arrows={false}
+                            autoPlaySpeed={3000}
+                            centerMode={false}
+                            draggable
+                            focusOnSelect={false}
+                            showDots
+                            infinite
+                            keyBoardControl
+                            minimumTouchDrag={80}
+                            pauseOnHover
+                            renderArrowsWhenDisabled={false}
+                            renderButtonGroupOutside={false}
+                            renderDotsOutside={false}
                             >
                             <div> {/* card 1*/}
                                 <div className="card" id="carousel-cards">
@@ -101,9 +105,7 @@ function Home(this: any) {
                                 </div>
                             </div>
                             </Carousel>
-                        <div className="card-body">
-                            <p>Head to the projects tab to view the rest.</p>
-                        </div>
+                            <p>Head to the <Link to={"/home"}>projects</Link> tab to view the rest.</p>
                     </div>
                 </div>
             </div>

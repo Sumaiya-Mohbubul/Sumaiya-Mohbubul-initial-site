@@ -2,6 +2,7 @@
     color: #ffffff;
     background: #000000;
     margin: 4%;
+    padding: 3%;
     text-align: center;
     opacity: .9;
     box-shadow: 0 0 0px #1e2020,
@@ -65,8 +66,7 @@
 
   .card-content {
     position: relative;
-
-
+    align-self: center;
     max-width: 90%;
     max-height: fit-content;
     padding-left: 3%;
@@ -93,6 +93,7 @@
     align-items: center;
     max-width: 15rem;
     margin-bottom: auto;
+    margin-left: 2%;
     padding: auto;
   }
   
@@ -130,6 +131,7 @@
         margin-top: 1%;
         font-size: 0.9em;
         line-height: 12pt;
+        color: #FFFF;
       }
     
       .card-image {
