@@ -1,41 +1,61 @@
- 
-  :root {
-    margin-left: auto;
-    margin-right: auto;
+  #carousel-cards {
+    color: #ffffff;
+    background: #000000;
+    margin: 4%;
+    text-align: center;
+    opacity: .9;
+    box-shadow: 0 0 0px #1e2020,
+                0 0 0px #1e2020,
+                0 0 0px #1e2020,
+                0 0 0px #1e2020;
   }
-  
-  
-  body {
-    min-height: 90%;
-    background: #212534;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 7rem;
-    padding-bottom: 5rem;
-    box-sizing: border-box;
+
+  .carousel {
+    text-align: center;
+    align-content: center;
+    align-self: center;
   }
-  
   
   .card {
-    max-width: 90%;
     background: #23283e;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
+    margin: auto;
+    margin-top: 3%;
     position: relative;
     border-radius: 10px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-content: center;
     display: flex;
     font-size: 1.5em;
     color: rgb(255, 255, 255);
-    cursor: pointer;
     font-family: monospace;
     opacity: .7;
     color: rgb(255, 255, 255);
-    transition: color 1s;
+    transition: all 1s;
+    color: #ffffff;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 150px #03e9f4;
+  }
+
+  .p {
+    color: rgb(255, 255, 255);
+  }
+  
+  .card-horizontal {
+    background: #23283e;
+    margin: auto;
+    margin-top: 3%;
+    padding: 3%;
+    position: relative;
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+    opacity: .7;
+    color: rgb(255, 255, 255);
+    transition: all 1s;
     color: #ffffff;
     box-shadow: 0 0 5px #03e9f4,
                 0 0 25px #03e9f4,
@@ -44,56 +64,84 @@
   }
 
   .card-content {
+    position: relative;
+
+
     max-width: 90%;
     max-height: fit-content;
+    padding-left: 3%;
+    padding-top: 2%;
+    color: #ffffff;
   }
 
-  .card-row {
-    max-height: 30%;
+  .card-body {
+    position: relative;
+    margin-top: 2%;
+    font-size: 0.9em;
+    line-height: 16pt;
   }
 
-  .card-col {
-
+  .card-image {
+    position: relative;
+    flex: 0 0 50%;
+    
   }
+
   #profilePic {
     position: relative;
     justify-content: center;
     align-items: center;
-    max-height: 20rem;
+    max-width: 15rem;
     margin-bottom: auto;
+    padding: auto;
   }
   
   @media (max-width: 700px) {
-    :root {
-        margin-left: auto;
-        margin-right: auto;
-      }
-      
-    .card {
-        width: auto;
-        max-width: 100%;
+      .card-horizontal {
         background: #23283e;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: auto;
-        padding: 10px;
+        margin: auto;
+        margin-top: 1%;
+        padding: 1%;
         position: relative;
-        border-radius: 7px;
+        border-radius: 10px;
         justify-content: center;
-        align-items: center;
-        text-align: center;
         display: flex;
-        font-size: 1rem;
+        font-size: 1em;
         color: rgb(255, 255, 255);
         font-family: monospace;
         opacity: .7;
         color: rgb(255, 255, 255);
-        transition: color 1s;
+        transition: all 1s;
         color: #ffffff;
         box-shadow: 0 0 5px #03e9f4,
                     0 0 5px #03e9f4,
                     0 0 20px #03e9f4,
                     0 0 50px #03e9f4;
+      }
+    
+      .card-content {
+        position: relative;
+        max-width: 90%;
+        max-height: fit-content;
+      }
+    
+      .card-body {
+        position: relative;
+        margin-top: 1%;
+        font-size: 0.9em;
+        line-height: 12pt;
+      }
+    
+      .card-image {
+        position: relative;
+        flex-wrap: 0, 0, 50%;
+      }
+      #profilePic {
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        max-width: 10rem;
+        margin-bottom: auto;
       }
     }
     
