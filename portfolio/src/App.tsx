@@ -20,7 +20,7 @@ function App() {
     <BrowserRouter>
       <main ref={parentRef} className="d-flex flex-column">
         <Navbar />
-          <div className="container-fluid p-0 flex-grow-1 h-auto">
+          <div className="container">
             <React.Suspense fallback={null}>
               <Routes />
             </React.Suspense>
