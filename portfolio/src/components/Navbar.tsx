@@ -24,19 +24,14 @@ function Navbar() {
                             color: isActive ? 'white' : 'greenyellow' })} className="nav-link" onClick={handleCollapse}>
                         Home
                     </NavLink>
-                    <NavLink to="/home" style={({ isActive }) => ({ 
+                    <NavLink to="/projects" style={({ isActive }) => ({ 
                             color: isActive ? 'white' : 'greenyellow' })} className="nav-link" onClick={handleCollapse}>
                         Projects
                     </NavLink>
-                    <NavLink to="/home" style={({ isActive }) => ({ 
+                    <NavLink to="/articles" style={({ isActive }) => ({ 
                             color: isActive ? 'white' : 'greenyellow' })} className="nav-link" onClick={handleCollapse}>
-                        Links
+                        Articles
                     </NavLink>
-                    {/*<div className="collapse navbar-collapse" id="navbarSupportedContent" ref={navRef}>
-                        <div className="navbar-nav ms-auto mb-2 mb-lg-0 w-100 d-flex align-items-start align-items-lg-center">
-                            <DarkSwitch />
-                        </div>
-                    </div> */}
                 </div>
             </nav>
         </div>
